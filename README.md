@@ -1,3 +1,4 @@
+[![CI](https://github.com/Shubzz-02/Jacoco2Cobertura/actions/workflows/gradle.yml/badge.svg)](https://github.com/Shubzz-02/Jacoco2Cobertura/actions/workflows/gradle.yml)
 # Jacoco2Cobertura
 
 A Java program for converting JaCoCo XML coverage reports into Cobertura XML coverage

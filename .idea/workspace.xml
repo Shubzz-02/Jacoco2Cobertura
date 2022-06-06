@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a022851-a3db-4b68-9322-d0013e2b2eb2" name="Changes" comment="added code">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/gradle.yml" afterDir="false" />
+    <list default="true" id="0a022851-a3db-4b68-9322-d0013e2b2eb2" name="Changes" comment="git update-index --chmod=+x gradlew">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +221,7 @@
       <workItem from="1654184453347" duration="663000" />
       <workItem from="1654251233665" duration="41000" />
       <workItem from="1654251361850" duration="9000" />
-      <workItem from="1654495911168" duration="33371000" />
+      <workItem from="1654495911168" duration="33892000" />
     </task>
     <task id="LOCAL-00001" summary="added code">
       <created>1654539931585</created>
@@ -230,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654539931585</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="setup github action">
+      <created>1654540217393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654540217393</updated>
+    </task>
+    <task id="LOCAL-00003" summary="git update-index --chmod=+x gradlew">
+      <created>1654540411182</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654540411182</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,7 +263,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added code" />
+    <MESSAGE value="setup github action" />
+    <MESSAGE value="git update-index --chmod=+x gradlew" />
+    <option name="LAST_COMMIT_MESSAGE" value="git update-index --chmod=+x gradlew" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
