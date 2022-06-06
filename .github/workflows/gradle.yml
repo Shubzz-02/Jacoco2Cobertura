@@ -10,9 +10,6 @@ jobs:
         with:
           java-version: 11
           distribution: 'adopt'
+          cache: gradle
       - name: Build with Gradle
-        run: ./gradlew build
-      - uses: actions/upload-artifact@v3
-        with:
-          name: Package
-          path: build/libs
+        run: ./gradlew build --no-daemon
