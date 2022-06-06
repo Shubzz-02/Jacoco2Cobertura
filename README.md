@@ -1,7 +1,10 @@
-# cover2cover
+# Jacoco2Cobertura
 
-A script for converting JaCoCo XML coverage reports into Cobertura XML coverage
+A Java program for converting JaCoCo XML coverage reports into Cobertura XML coverage
 reports.
+
+## Why Jacoco2Cobertura When there is Cover2Cover.py
+----- JAVA
 
 ## Motivation
 
@@ -27,7 +30,7 @@ Not every feature is supported, but close enough.
 
 Add the following "post step" to your Jenkins build:
 
-    mkdir -p target/site/cobertura && cover2cover.py target/site/jacoco/jacoco.xml src/main/java > target/site/cobertura/coverage.xml
+    mkdir -p target/site/cobertura && Jacoco2Cobertura-X.X.X.jar -j target/site/jacoco/jacoco.xml -s src/main/java -d target/site/cobertura/coverage.xml
 
 And add the Cobertura plugin with the following path:
 

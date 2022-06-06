@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a022851-a3db-4b68-9322-d0013e2b2eb2" name="Changes" comment="" />
+    <list default="true" id="0a022851-a3db-4b68-9322-d0013e2b2eb2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/Jacoco2Cobertura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/Jacoco2Cobertura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/core/XMLMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/core/XMLMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/utils/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/report.dtd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/report.dtd" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +25,62 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Jacoco2Cobertura" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Jacoco2Cobertura" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Jacoco2Cobertura" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Jacoco2Cobertura" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Jacoco2Cobertura" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29NQA7nPRYpR1fKMpM6pJP4hmXy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -25,9 +92,114 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Shubzz/Desktop/Git/Jacoco2Cobertura",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Shubzz\Desktop\Git\Jacoco2Cobertura" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Jacoco2Cobertura">
+    <configuration name="Jacoco2Cobertura" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.shubzz.j2c.Jacoco2Cobertura" />
+      <module name="Jacoco2Cobertura.main" />
+      <option name="PROGRAM_PARAMETERS" value="-j C:\Users\Shubzz\Desktop\jacoco-maven-examples-master\org.jacoco.examples.maven.java\target\site\jacoco\jacoco.xml -s C:\Users\Shubzz\Desktop\jacoco-maven-examples-master\org.jacoco.examples.maven.java\src\main -d C:\Users\Shubzz\Desktop\jacoco-maven-examples-master\org.jacoco.examples.maven.java\target\site\" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.shubzz.j2c.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Jacoco2Cobertura [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--stacktrace" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Jacoco2Cobertura [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Jacoco2Cobertura [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Jacoco2Cobertura" />
+      <item itemvalue="Gradle.Jacoco2Cobertura [classes]" />
+      <item itemvalue="Gradle.Jacoco2Cobertura [clean]" />
+      <item itemvalue="Gradle.Jacoco2Cobertura [build]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Jacoco2Cobertura [build]" />
+        <item itemvalue="Gradle.Jacoco2Cobertura [clean]" />
+        <item itemvalue="Application.Jacoco2Cobertura" />
+        <item itemvalue="Gradle.Jacoco2Cobertura [classes]" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,7 +208,94 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652950917393</updated>
+      <workItem from="1652950919941" duration="2552000" />
+      <workItem from="1652969411317" duration="37000" />
+      <workItem from="1653225437706" duration="2426000" />
+      <workItem from="1653236768398" duration="4015000" />
+      <workItem from="1653240820374" duration="6253000" />
+      <workItem from="1653247127917" duration="1621000" />
+      <workItem from="1653382175904" duration="3379000" />
+      <workItem from="1653386725370" duration="979000" />
+      <workItem from="1653387742277" duration="3664000" />
+      <workItem from="1653465373669" duration="703000" />
+      <workItem from="1653735444197" duration="10478000" />
+      <workItem from="1653761041330" duration="2070000" />
+      <workItem from="1653763153597" duration="5169000" />
+      <workItem from="1653803077102" duration="11000" />
+      <workItem from="1653815247574" duration="5530000" />
+      <workItem from="1653850223726" duration="891000" />
+      <workItem from="1653893571748" duration="604000" />
+      <workItem from="1654095964222" duration="7744000" />
+      <workItem from="1654156197241" duration="41000" />
+      <workItem from="1654184453347" duration="663000" />
+      <workItem from="1654251233665" duration="41000" />
+      <workItem from="1654251361850" duration="9000" />
+      <workItem from="1654495911168" duration="33069000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/shubzz/j2c/utils/Validator.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/shubzz/j2c/utils/Validator.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/shubzz/j2c/core/XMLMain.java</url>
+          <line>291</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/shubzz/j2c/core/XMLMain.java</url>
+          <line>211</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/shubzz/j2c/core/XMLMain.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/shubzz/j2c/core/XMLMain.java</url>
+          <line>254</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/shubzz/j2c/core/XMLMain.java</url>
+          <line>173</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Jacoco2Cobertura$org_shubzz_j2c_Jacoco2Cobertura.ic" NAME="org.shubzz.j2c.Jacoco2Cobertura Coverage Results" MODIFIED="1653390775731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.shubzz.j2c.*</FILTER>
+    </SUITE>
   </component>
 </project>
