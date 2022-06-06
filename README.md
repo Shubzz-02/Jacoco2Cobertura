@@ -5,7 +5,7 @@ A Java program for converting JaCoCo XML coverage reports into Cobertura XML cov
 reports.
 
 ## Why Jacoco2Cobertura When there is Cover2Cover.py
------ JAVA
+----- No need to install python.
 
 ## Motivation
 
