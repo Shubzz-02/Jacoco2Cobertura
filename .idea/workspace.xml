@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a022851-a3db-4b68-9322-d0013e2b2eb2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/Jacoco2Cobertura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/Jacoco2Cobertura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/core/XMLMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/core/XMLMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/utils/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/shubzz/j2c/utils/Validator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/report.dtd" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/report.dtd" afterDir="false" />
+    <list default="true" id="0a022851-a3db-4b68-9322-d0013e2b2eb2" name="Changes" comment="added code">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/gradle.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,8 +221,16 @@
       <workItem from="1654184453347" duration="663000" />
       <workItem from="1654251233665" duration="41000" />
       <workItem from="1654251361850" duration="9000" />
-      <workItem from="1654495911168" duration="33069000" />
+      <workItem from="1654495911168" duration="33371000" />
     </task>
+    <task id="LOCAL-00001" summary="added code">
+      <created>1654539931585</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1654539931585</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +246,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added code" />
+    <option name="LAST_COMMIT_MESSAGE" value="added code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
