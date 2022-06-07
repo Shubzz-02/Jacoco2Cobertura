@@ -65,7 +65,7 @@ public class Validator {
             });
             builder.setEntityResolver((publicId, systemId) -> {
                 if ((systemId != null && !systemId.contains("report.dtd")) || (publicId != null
-                        && !publicId.contains("-//JACOCO//DTD Report 1.0//EN"))) {
+                        && !publicId.contains("-//JACOCO//DTD Report"))) {
                     System.out.println("PUBLIC ID : " + publicId + " SYSTEM ID : " + systemId);
                     throw new IOException();
                 } else {
