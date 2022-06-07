@@ -2,6 +2,7 @@ package org.shubzz.j2c;
 
 import java.io.IOException;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
 import org.shubzz.j2c.core.XMLMain;
 import org.shubzz.j2c.utils.Validator;
 import org.xml.sax.SAXException;
@@ -54,8 +55,10 @@ public class Jacoco2Cobertura implements Runnable {
             try {
                 xmlMain.init();
                 xmlMain.createCoberturaCoverageRootTag();
-            } catch (ParserConfigurationException | IOException | SAXException e) {
-                System.out.println("Some Error Occurred. Please try again if problem persist please raise an issue in Github");
+            } catch (TransformerException | ParserConfigurationException | IOException |
+                     SAXException e) {
+                System.out.println(
+                        "Some Error Occurred. Please try again if problem persist please raise an issue in Github");
                 throw new RuntimeException(e);
             }
         }

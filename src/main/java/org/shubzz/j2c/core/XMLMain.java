@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.MathContext;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -66,7 +67,7 @@ public class XMLMain {
     }
 
 
-    public void createCoberturaCoverageRootTag() {
+    public void createCoberturaCoverageRootTag() throws TransformerException, IOException {
 
         coberturaRoot = coberturaDocument.createElement("coverage");
         coberturaDocument.appendChild(coberturaRoot);
@@ -305,25 +306,24 @@ public class XMLMain {
     }
 
 
-    private void createXml() {
+    private void createXml() throws TransformerException, IOException {
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
         Transformer transformer = null;
-        try {
-            transformer = transformerFactory.newTransformer();
-            DOMSource source = new DOMSource(coberturaRoot);
-            StreamResult result;
-            if (destination.endsWith(".xml") || destination.endsWith(".XML")) {
-                result = new StreamResult(new File(destination));
-                System.out.println("Successfully Generated xml file in :- " + destination);
-            } else {
-                result = new StreamResult(new File(destination + "/coverage.xml"));
-                System.out.println(
-                        "Successfully Generated xml file in :- " + destination + "coverage.xml");
-            }
+        transformer = transformerFactory.newTransformer();
+        DOMSource source = new DOMSource(coberturaRoot);
+        StreamResult result;
+        File dest = new File(destination);
+        if (destination.endsWith(".xml") || destination.endsWith(".XML")) {
+            Files.createDirectories(dest.toPath().getParent());
+            result = new StreamResult(new File(destination));
             transformer.transform(source, result);
-
-        } catch (TransformerException e) {
-            throw new RuntimeException(e);
+            System.out.println("Successfully Generated xml file in :- " + destination);
+        } else {
+            Files.createDirectories(dest.toPath());
+            result = new StreamResult(new File(destination + "/coverage.xml"));
+            transformer.transform(source, result);
+            System.out.println(
+                    "Successfully Generated xml file in :- " + destination + "coverage.xml");
         }
     }
 }
