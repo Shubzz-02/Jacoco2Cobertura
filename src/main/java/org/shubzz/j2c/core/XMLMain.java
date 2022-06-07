@@ -2,6 +2,8 @@ package org.shubzz.j2c.core;
 
 import java.io.File;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.MathContext;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -69,11 +71,12 @@ public class XMLMain {
         coberturaRoot = coberturaDocument.createElement("coverage");
         coberturaDocument.appendChild(coberturaRoot);
 
-        long total = Long.parseLong(
+        BigDecimal total = new BigDecimal(
                 jacocoRoot.getElementsByTagName("sessioninfo").item(0).getAttributes()
-                        .getNamedItem("start").getNodeValue()) / 1000L;
+                        .getNamedItem("start").getNodeValue());
+        total = total.divide(new BigDecimal("1000"), MathContext.DECIMAL64);
 
-        coberturaRoot.setAttribute("timestamp", Long.toString(total));
+        coberturaRoot.setAttribute("timestamp", total.toString());
 
         add_counters(jacocoRoot, coberturaRoot);
 
@@ -146,7 +149,6 @@ public class XMLMain {
     private void createMethodsTag(Element c_class, Element j_class, NodeList all_j_lines) {
 
         NodeList j_methods = j_class.getElementsByTagName("method");
-        NodeList temp_j_methods = j_methods;
         Element c_methods = coberturaDocument.createElement("methods");
         c_class.appendChild(c_methods);
 
@@ -161,7 +163,7 @@ public class XMLMain {
 
                 add_counters(element, c_method);
 
-                List<Node> j_method_lines = getMethodLines(element, temp_j_methods, all_j_lines);
+                List<Node> j_method_lines = getMethodLines(element, j_methods, all_j_lines);
                 c_method.appendChild(convert_lines(j_method_lines));
 
                 c_methods.appendChild(c_method);
@@ -189,10 +191,10 @@ public class XMLMain {
         c_line.setAttribute("number", element.getAttribute("nr"));
         c_line.setAttribute("hits", (ci > 0) ? "1" : "0");
         if (mb + cb > 0) {
-            String percentage = ((int) 100 * ((float) cb / ((float) cb + (float) mb))) + "%";
+            String percentage = (int) (100 * ((double) cb / ((double) cb + (double) mb))) + "%";
             c_line.setAttribute("branch", "true");
             c_line.setAttribute("condition-coverage",
-                    percentage + "(" + cb + "/" + (cb + mb) + ")");
+                    percentage + " (" + cb + "/" + (cb + mb) + ")");
 
             Element conditions = coberturaDocument.createElement("conditions");
             Element condition = coberturaDocument.createElement("condition");
@@ -234,16 +236,17 @@ public class XMLMain {
                 n_type = node;
             }
         }
-        float covered = 0f, missed = 0f;
+        double covered = 0f, missed = 0f;
 
         if (n_type != null) {
-            covered = Float.parseFloat(
+            covered = Double.parseDouble(
                     n_type.getAttributes().getNamedItem("covered").getNodeValue());
-            missed = Float.parseFloat(n_type.getAttributes().getNamedItem("missed").getNodeValue());
+            missed = Double.parseDouble(
+                    n_type.getAttributes().getNamedItem("missed").getNodeValue());
             if (op == '/') {
-                return Float.toString(covered / (covered + missed));
+                return Double.toString(covered / (covered + missed));
             } else {
-                return Float.toString(covered + missed);
+                return Double.toString(covered + missed);
             }
         } else {
             return "0.0";
@@ -312,9 +315,10 @@ public class XMLMain {
             if (destination.endsWith(".xml") || destination.endsWith(".XML")) {
                 result = new StreamResult(new File(destination));
                 System.out.println("Successfully Generated xml file in :- " + destination);
-            }else {
+            } else {
                 result = new StreamResult(new File(destination + "/coverage.xml"));
-                System.out.println("Successfully Generated xml file in :- " + destination+"/coverage.xml");
+                System.out.println(
+                        "Successfully Generated xml file in :- " + destination + "coverage.xml");
             }
             transformer.transform(source, result);
 
